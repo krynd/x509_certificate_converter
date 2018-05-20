@@ -27,8 +27,6 @@ namespace Cert_Creator_SMIME_CSharp
             var certOut = tempPath + "cert.crt";
             var certPass = "password";
 
-            var deleteThis = "nope";
-
             var base64Cert = "base64 encoded string";
             var cert = new System.Security.Cryptography.X509Certificates.X509Certificate2(Convert.FromBase64String(base64Cert), certPass, System.Security.Cryptography.X509Certificates.X509KeyStorageFlags.PersistKeySet);
 
